@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISRO Rockets - Shivam Saini</title>
+    <link rel="stylesheet" href="build/css/input.css" />
+    <link rel="stylesheet" href="build/css/style.css" />
+<!-- favicon -->
+<!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.ico"> -->
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="img/"> -->
+<link rel="icon" type="build/img/image/png" sizes="16x16" href="build/img/favicon-16x16.png">
+<!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="font-family: 'Poppins', sans-serif"
+    class="dark:bg-slate-800 bg-slate-100 box-border"
+  >
+    <header
+      class="bg-blue-700 text-white max-h-fit dark:bg-blue-900 sticky top-0"
+    >
+      <section class="flex justify-between max-w-4xl mx-auto">
+        <!-- Icon and Logo -->
+        <div class="logo m-2 p-2 inline-block">
+          <a
+            href="#main-banner"
+            class="icon text-lg sm:text-xlg font-bold p-2 hover:text-slate-200"
+            >🚀 ISRO Rockets</a
+          >
+        </div>
+        <!-- hamburger icon / open menu-->
+        <button
+          id="mobilemenu-open"
+          class="text-2xl m-3 sm:hidden focus:outline-none hover:text-slate-200 hover:animate-spin "
+        >
+          &#9776;
+        </button>
+
+        <!-- mobile hamburger closer / mobilemenu -->
+        <div
+          id="mobilemenu-close"
+          class="hidden sm:hidden md:hidden absolute top-0 right-0 min-h-screen w-screen bg-slate-800 bg-opacity-100 text-start"
+        >
+          <button
+            id="mobile-open-button"
+            class="text-2xl m-3 sm:hidden md:hidden focus:outline-none hover:text-slate-200 animate-bounce ml-6 border-[1px] rounded-md border-white p-1"
+          >
+            &#9776;
+          </button>
+          <a href="#main-banner" class="  block font-bold text-4xl mx-auto m-6 hover:text-yellow-200 border-b-2 border-gray-200 text-center hover:translate-x-1 w-1/3">Home</a>
+          <a href="#our-rockets" class="  block font-bold text-4xl mx-auto m-6 hover:text-yellow-200 border-b-2 border-gray-200 text-center hover:-translate-x-1 w-1/2">Our Rockets</a>
+          <a href="#testimonials" class="  block font-bold text-4xl mx-auto m-6 hover:text-yellow-200 border-b-2 border-gray-200 text-center hover:translate-x-1 w-1/2">Testimonials</a>
+          <a href="#contactus" class="  block font-bold text-4xl mx-auto m-6 hover:text-yellow-200 border-b-2 border-gray-200 text-center hover:-translate-x-1 w-1/2">Contact Us</a>
+          
+        </div>
+        <!-- main Navigation -->
+        <nav class="main-nav hidden sm:inline">
+          <ul class="flex text-base sm:text-xs">
+            <li class="m-2 p-2 hover:text-slate-200 font-bold">
+              
+              <li class="m-2 p-2 hover:text-slate-200 font-bold">
+              <a class="sm:text-base" href="#our-rockets">Rockets </a>
+            </li>
+            </li>
+
+            <li class="m-2 p-2 hover:text-slate-200 font-bold">
+              <a class="sm:text-base" href="#testimonials">Testimonials </a>
+            </li>
+            <li class="m-2 p-2 hover:text-slate-200 font-bold">
+              <a class="sm:text-base" href="#contactus">Contact Us </a>
+            </li>
+            <li class="m-2 p-2 hover:text-slate-200 font-bold">
+              <a class="sm:text-base" id="login" href="#">Login </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <!-- /header end -->
+
+<!-- COOKIE POPUP -->
+<div id="cookie-popup" class="bg-red-400 p-2 hidden sticky top-2">
+  <div class="cookie">
+    <h1 class="font-bold text-xs text-center text-gray-700">Accept Cookies to Improve Analytics
+      <button id="popupbtn" class=" text-xs text-center rounded-lg bg-red-800 p-2 text-white hover:bg-yellow-300 hover:text-black">Got It</button>
+    </h1>
+  </div>
+</div>
+
+    <!-- main section -->
+    <main class="max-w-4xl mx-auto p-8 md:p-1">
+      <!-- main banner -->
+      <section
+        id="main-banner"
+        class="flex flex-wrap justify-evenly flex-col-reverse md:flex-row self-center mb-4 scroll-mt-24 "
+      >
+        <div
+          class="mainheading max-w-sm mb-7 sm:max-w-md mx-auto font-bold sm:mt-20 md:mt-32 md:my-auto text-2xl sm:text-4xl text-center text-slate-600 dark:text-slate-100 sm:my-auto"
+        >
+          ISRO is the
+          <span class="pride"> Pride of India</span>
+          We make every mission Successfull 🌕
+        </div>
+
+        <div
+          id="banner-image"
+          class="inline-block max-w-sm md:w-1/2 lg:w-1/2 mx-auto my-4 md:my-auto mb-10 md:mt-10"
+        >
+          <img
+            src="build/img/rocketdab.png"
+            alt="bannerImage"
+            class="sm:w-3/4 mx-auto  my-4 w-4/6"
+          />
+        </div>
+      </section>
+      <hr class="bg-black border-1 border-gray-300 h-[1px] w-1/2 my-4 m-auto" />
+
+      <h1
+        class="max-w-xs mx-auto my-10 text-center text-base font-semibold text-slate-600 dark:text-slate-200 sm:text-lg"
+      >
+        We're building rockets for the next century today. From the moon to
+        Mars, Jupiter and beyond... <br />
+        ISRO Rockets
+      </h1>
+
+      <h1
+        id="heading_mission "
+        class="max-w-sm mb-7 sm:max-w-md mx-auto font-bold my-auto text-2xl sm:text-4xl text-center text-slate-600 dark:text-slate-100"
+      >
+        Our Missions
+      </h1>
+      <!-- our rocket section -->
+      <section
+        id="our-rockets"
+        class="my-8 mx-auto max-w-fit flex flex-wrap flex-col sm:flex-row sm:border-none md:flex-row lg:flex-row scroll-mt-36"
+      >
+        <div
+          class="card1 p-2 m-4 sm:m-1 md:m-2 shadow-md rounded-2xl shadow-gray-400 dark:shadow-none sm:inline-block md:w-64 sm:p-2"
+        >
+          <img
+            src="build/img/rocketman.png"
+            alt="rocketman"
+            srcset=""
+            class="sm:w-52 mx-auto my-4 w-44 "
+          />
+          <h1
+            class="text-lg text-center font-bold text-slate-600 dark:text-slate-200"
+          >
+            GaganYan 🌍
+          </h1>
+          <h1
+            class="m-2 text-center font-bold text-slate-600 dark:text-slate-200"
+          >
+            ⭐⭐⭐⭐
+          </h1>
+          <p
+            class="text-center text-sm sm:text-base font-bold text-slate-600 dark:text-slate-200 w-3/4 mx-auto my-3"
+          >
+            We take Humans To Beyond Sky. We Can also Take You, Are You Ready
+            for a Ride?
+          </p>
+        </div>
+        <div
+          class="card1 p-2 m-4 sm:m-1 md:m-2 shadow-md rounded-2xl shadow-gray-400 dark:shadow-none sm:inline-block md:w-64 sm:p-2"
+        >
+          <img
+            src="build/img/rocketride.png"
+            alt="rocketman"
+            srcset=""
+            class="sm:w-52 mx-auto my-4 w-44"
+          />
+          <h1
+            class="text-lg text-center font-bold text-slate-600 dark:text-slate-200"
+          >
+            Mangalyan 🌕
+          </h1>
+          <h1
+            class="m-2 text-center font-bold text-slate-600 dark:text-slate-200"
+          >
+            ⭐⭐⭐⭐⭐
+          </h1>
+          <p
+            class="text-center text-sm sm:text-base font-bold text-slate-600 dark:text-slate-200 w-3/4 mx-auto my-3"
+          >
+            We Sent a Orbitar to Mars in Our Very First Attempt. Are You Excited
+            for More Missions?
+          </p>
+        </div>
+        <div
+          class="card1 p-2 m-4 sm:m-1 md:m-2 shadow-md rounded-2xl shadow-gray-400 dark:shadow-none sm:inline-block md:w-64 sm:p-2"
+        >
+          <img
+            src="build/img/rocketlaunch.png"
+            alt="rocketman"
+            srcset=""
+            class="sm:w-52 mx-auto my-4 w-44"
+          />
+          <h1
+            class="text-lg text-center font-bold text-slate-600 dark:text-slate-200"
+          >
+            Chandrayan 3 🌒
+          </h1>
+          <h1
+            class="m-2 text-center font-bold text-slate-600 dark:text-slate-200"
+          >
+            ⭐⭐⭐⭐
+          </h1>
+          <p
+            class="text-center text-sm sm:text-base font-bold text-slate-600 dark:text-slate-200 w-3/4 mx-auto my-3"
+          >
+            We Launch an Another Mission to Our Moon. The Mission is currently
+            undergoing...
+          </p>
+        </div>
+      </section>
+      <section id="testimonials" class="scroll-mt-24">
+        <h1
+          id="heading_mission "
+          class="max-w-sm mb-7 mt-10 sm:max-w-md mx-auto font-bold my-auto text-2xl sm:text-4xl text-center text-slate-600 dark:text-slate-100"
+        >
+          Testimonials
+        </h1>
+        <figure
+          class="review my-6 bg-blue-400 border-2 border-white p-5 rounded-xl dark:border-none dark:text-slate-100 font-bold sm:w-4/5 sm:mx-auto sm:my-10"
+        >
+          <p class="text-4xl text-slate-800 dark:text-slate-300 text-left">”</p>
+          <p class="text-slate-700 dark:text-slate-200">
+            The next morning started quite early for us. For an operation that
+            was to start at 6.55 am., we reached ISTRAC by 2 a.m. Some wished to
+            stay back on the campus. Excitement, hope, anxiety- all emotions
+            were at play on the campus.
+          </p>
+          <p class="text-4xl text-slate-800 dark:text-slate-300 text-right">
+            „
+          </p>
+          <p class="text-sm text-slate-800 dark:text-slate-200 text-right">
+            - Radhakrishnan, My Odyssey: Memoirs of the Man behind the
+            Mangalyaan Mission
+          </p>
+        </figure>
+        <figure
+          class="review my-6 bg-blue-400 border-2 border-white p-5 rounded-xl dark:border-none dark:text-slate-100 font-bold sm:mx-auto sm:my-10 sm:w-11/12"
+        >
+          <p class="text-4xl text-slate-800 dark:text-slate-200 text-left">”</p>
+          <p class="text-slate-700 dark:text-slate-200">
+            There were both cheers and tears as our engineers went around
+            congratulating each other... We had scripted history.
+          </p>
+          <p class="text-4xl text-slate-800 dark:text-slate-300 text-right">
+            „
+          </p>
+          <p class="text-sm text-slate-800 dark:text-slate-200 text-right">
+            - Shivam Saini - ISRO Fan
+          </p>
+        </figure>
+        <figure
+          class="review my-6 bg-blue-400 border-2 border-white p-5 rounded-xl dark:border-none dark:text-slate-100 font-bold sm:w-4/5 sm:mx-auto sm:my-10"
+        >
+          <p class="text-4xl text-slate-800 dark:text-slate-300 text-left">”</p>
+          <p class="text-slate-700 dark:text-slate-200">
+            Chandrayaan-2 -- "mooncraft" is the second lunar exploration mission
+            developed by the Indian Space Research Organisation (ISRO), after
+            Chandrayaan-1. It consists of a lunar orbiter, a lander, and the
+            Pragyan rover, all of which were developed in India.
+          </p>
+          <p class="text-4xl text-slate-800 dark:text-slate-300 text-right">
+            „
+          </p>
+          <p class="text-sm text-slate-800 dark:text-slate-200 text-right">
+            - ISRO Chief K.Sivan
+          </p>
+        </figure>
+      </section>
+      <section id="contactus" class="scroll-mt-24">
+        <h1
+          id="heading_mission "
+          class="max-w-sm mb-7 mt-10 sm:max-w-md mx-auto font-bold my-auto text-2xl sm:text-4xl text-center text-slate-600 dark:text-slate-100"
+        >
+          Contact Us
+        </h1>
+
+        <form
+          action=""
+          class="max-w-sm md:max-w-xl sm:max-w-md border-[1px] border-slate-300 rounded-2xl shadow-lg mx-auto px-6 py-10 bg-slate-300"
+        >
+          <label for="email" class="text-slate-300 font-black text-lg mx-2 mt-3"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+            class="p-2 mx-auto m-2 w-full border-[2px] border-gray-300 rounded-xl focus:outline-none"
+          />
+          <label for="Phone" class="text-slate-300 font-black text-lg mx-2 mt-3"
+            >Phone</label
+          >
+          <input
+            type="tel"
+            name=""
+            id="Phone"
+            placeholder="Enter Your Mobile"
+            class="p-2 mx-auto m-2 w-full border-[2px] border-gray-300 rounded-xl focus:outline-none"
+          />
+
+          <button
+            class="bg-blue-400 px-3 py-2 rounded-md m-3 dark:text-slate-100 hover:bg-blue-500 font-bold"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+    <section
+      id="main-footer"
+      class="bg-blue-700 dark:bg-blue-900 w-full p-2 mt-10"
+    >
+      <footer
+        id="main-footer "
+        class="bg-blue-700 dark:bg-blue-900 w-full text-white flex justify-around max-w-4xl mx-auto"
+      >
+        <address
+          class="text-[10px] sm:text-sm md:text-sm max-w-fit sm:w-1/2 md:w-1/2 cursor-pointer"
+        >
+          <a class="hover:cursor-pointer hover:text-yellow-300 block" href=""
+            >ISRO Rocket-Powered Products, Inc.
+          </a>
+          <a class="hover:cursor-pointer hover:text-yellow-300 block" href=""
+            >555 Astro Way
+          </a>
+          <a class="hover:cursor-pointer hover:text-yellow-300 block" href=""
+            >Fairfield, New Delhi 98765-121212
+          </a>
+          <a class="hover:cursor-pointer hover:text-yellow-300 block" href=""
+            >Email: isro--dummyproject@rocket.com
+          </a>
+          <a class="hover:cursor-pointer hover:text-yellow-300 block" href=""
+            >Phone: (555) 789-2345
+          </a>
+        </address>
+        <div
+          class="text-center w-1/3 sm:w-1/2 md:w-1/2 text-xs sm:text-sm md:text-sm self-end"
+        >
+          Copyright © 2023 All Rights Reserved <br />
+          Developed By -
+          <a
+            class="hover:text-black"
+            href="https://www.linkedin.com/in/shivamsaini26
+"
+            >Shivam Saini</a
+          >
+        </div>
+      </footer>
+    </section>
+  </body>
+  <script src="build/scripts/script.js"></script>
+</html>
